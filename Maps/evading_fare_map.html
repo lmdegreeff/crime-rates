@@ -59,7 +59,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 42.3601, lng: -71.06}
+          center: {lat: 42.360, lng: -71.059},
           mapTypeId: 'roadmap'
         });
 
@@ -96,11 +96,11 @@
         heatmap.set('radius', heatmap.get('radius') ? null : 20);
       }
       function changeOpacity() {
-        heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+        heatmap.set('opacity', heatmap.get('opacity') ? null : 2);
       }
       function getPoints() {
         return [
-        			new google.maps.LatLng(42.353706, -71.058986),
+			new google.maps.LatLng(42.353706, -71.058986),
 			new google.maps.LatLng(42.35693, -71.06005),
 			new google.maps.LatLng(42.285186, -71.092113),
 			new google.maps.LatLng(42.365062, -71.119498),

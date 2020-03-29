@@ -59,7 +59,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 42.3601, lng: -71.06}
+          center: {lat: 42.360, lng: -71.059},
           mapTypeId: 'roadmap'
         });
 
@@ -96,11 +96,11 @@
         heatmap.set('radius', heatmap.get('radius') ? null : 20);
       }
       function changeOpacity() {
-        heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+        heatmap.set('opacity', heatmap.get('opacity') ? null : 2);
       }
       function getPoints() {
         return [
-        			new google.maps.LatLng(42.312243, -71.075499),
+			new google.maps.LatLng(42.312243, -71.075499),
 			new google.maps.LatLng(42.292174, -71.077295),
 			new google.maps.LatLng(42.256092, -71.120796),
 			new google.maps.LatLng(42.276439, -71.098322),
@@ -277,7 +277,6 @@
 			new google.maps.LatLng(42.302469, -71.063766),
 			new google.maps.LatLng(42.280205, -71.086912),
 			new google.maps.LatLng(42.320045, -71.084082),
-			new google.maps.LatLng(-1.0, -1.0),
 			new google.maps.LatLng(42.34102, -71.079721),
 			new google.maps.LatLng(42.336646, -71.092854),
 			new google.maps.LatLng(42.295977, -71.07934),
@@ -1033,7 +1032,6 @@
 			new google.maps.LatLng(42.306926, -71.097856),
 			new google.maps.LatLng(42.326388, -71.101818),
 			new google.maps.LatLng(42.292252, -71.089499),
-			new google.maps.LatLng(-1.0, -1.0),
 			new google.maps.LatLng(42.289278, -71.075815),
 			new google.maps.LatLng(42.295789, -71.055818),
 			new google.maps.LatLng(42.325574, -71.052481),
@@ -1079,7 +1077,6 @@
 			new google.maps.LatLng(42.325029, -71.073414),
 			new google.maps.LatLng(42.313961, -71.066855),
 			new google.maps.LatLng(42.320381, -71.065628),
-			new google.maps.LatLng(-1.0, -1.0),
 			new google.maps.LatLng(42.326146, -71.053491),
 			new google.maps.LatLng(42.315069, -71.097466),
 			new google.maps.LatLng(42.324226, -71.052426),
@@ -1341,7 +1338,6 @@
 			new google.maps.LatLng(42.340447, -71.081881),
 			new google.maps.LatLng(42.280018, -71.07837),
 			new google.maps.LatLng(42.314344, -71.074871),
-			new google.maps.LatLng(-1.0, -1.0),
 			new google.maps.LatLng(42.302506, -71.083294),
 			new google.maps.LatLng(42.278966, -71.083193),
 			new google.maps.LatLng(42.320778, -71.105538),

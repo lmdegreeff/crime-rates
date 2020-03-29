@@ -59,7 +59,7 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
-          center: {lat: 42.3601, lng: -71.06}
+          center: {lat: 42.360, lng: -71.059},
           mapTypeId: 'roadmap'
         });
 
@@ -96,11 +96,11 @@
         heatmap.set('radius', heatmap.get('radius') ? null : 20);
       }
       function changeOpacity() {
-        heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+        heatmap.set('opacity', heatmap.get('opacity') ? null : 2);
       }
       function getPoints() {
         return [
-        			new google.maps.LatLng(42.351824, -71.133134),
+			new google.maps.LatLng(42.351824, -71.133134),
 			new google.maps.LatLng(42.295072, -71.047497),
 			new google.maps.LatLng(42.381358, -71.037682),
 			new google.maps.LatLng(42.290876, -71.082741),
@@ -268,7 +268,6 @@
 			new google.maps.LatLng(42.295249, -71.071088),
 			new google.maps.LatLng(42.295402, -71.082378),
 			new google.maps.LatLng(42.329912, -71.078759),
-			new google.maps.LatLng(-1.0, -1.0),
 			new google.maps.LatLng(42.313414, -71.077896),
 			new google.maps.LatLng(42.301759, -71.07463),
 			new google.maps.LatLng(42.264149, -71.100889),
