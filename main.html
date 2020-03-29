@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2>Crime Map Dropdown</h2>
+<p>Click on the button to open the dropdown menu, and use the input field to search for a specific crime heat map.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Map Types</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="">Aggravated Assault</a>
+    <a href="">Arson</a>
+    <a href="#blog">Assembly or Gathering Violations</a>
+    <a href="#contact">Auto Theft</a>
+    <a href="#custom">Auto Theft Recovery</a>
+    <a href="#support">Ballistics</a>
+    <a href="#tools">Bomb Hoax</a>
+    <a href="#about">Commercial Burglary</a>
+    <a href="#about">Confidence Games</a>
+    <a href="#about">Counterfeiting</a>
+    <a href="#about">Criminal Harassment</a>
+    <a href="#about">Disorderly Conduct</a>
+    <a href="#about">Drug Violation</a>
+    <a href="#about">Embezzlement</a>
+    <a href="#about">Evading Fare</a>
+    <a href="#about">Fire Related Reports</a>
+    <a href="#about">Firearm Discovery</a>
+    <a href="#about">Firearm Violations</a>
+    <a href="#about">Fraud</a>
+    <a href="#about">Harassment</a>
+    <a href="#about">Harbor Related Incidents</a>
+    <a href="#about">Homicide</a>
+    <a href="#about">Investigate Person</a>
+    <a href="#about">Investigate Property</a>
+    <a href="#about">Landlord-Tenant Disputes</a>
+    <a href="#about">Larceny</a>
+    <a href="#about">Larceny from Motor Vehicle</a>
+    <a href="#about">License Plate Related Incidents</a>
+    <a href="#about">License Violation</a>
+    <a href="#about">Liquor Violation</a>
+    <a href="#about">Medical Assistance</a>
+    <a href="#about">Missing Person Located</a>
+    <a href="#about">Missing Person Reported</a>
+    <a href="#about">Motor Vehicle Accident Reponse</a>
+    <a href="#about">Offenses Against Child</a>
+    <a href="#about">Operating Under the Influence</a>
+    <a href="#about">Other</a>
+    <a href="#about">Other Burglary</a>
+    <a href="#about">Police Service Incidents</a>
+    <a href="#about">Prisoner Related Incidents</a>
+    <a href="#about">Property Found</a>
+    <a href="#about">Property Lost</a>
+    <a href="#about">Property Related Damage</a>
+    <a href="#about">Prostitution</a>
+    <a href="#about">Recovered Stolen Property</a>
+    <a href="#about">Residential Burglary</a>
+    <a href="#about">Restraining Order Violations</a>
+    <a href="#about">Robbery</a>
+    <a href="#about">Search Warrants</a>
+    <a href="#about">Service</a>
+    <a href="#about">Simple Assault</a>
+    <a href="#about">Towed</a>
+    <a href="#about">Vandalism</a>
+    <a href="#about">Verbal Disputes</a>
+    <a href="#about">Violations</a>
+    <a href="#about">Warrant Arrests</a>
+
+
+
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+</script>
+
+</body>
+</html>
+
+<br><br><br><br><br><br>
+<img src="https://www.wheretraveler.com/sites/default/files/Boston-Downtown-Map.jpg" alt="calc" width="500" height="333">
+<h5>Map of Boston</h5>
+
+</body>
+</html>
